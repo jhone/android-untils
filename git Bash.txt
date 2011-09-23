@@ -1,0 +1,72 @@
+﻿--list value
+$git config --global -l
+
+---add proxy
+$git config --global add http.proxy "http://192.168.102.38:808"
+
+****
+
+保存在c:/.gitconfig
+
+[core]
+        #gitproxy="proxy-command" for kernel.org
+        #gitproxy=default-proxy ; for all the rest
+        
+        gitproxy=192.168.102.38:808
+
+[http]
+	proxy = 192.168.102.38:808
+        proxyport=808        
+*********************
+******* download all file *************
+$git clone https://git@github.com/jhone/android-utils.git
+
+**********add a file and test *************************
+$touch demo.txt
+$git add demo.txt
+$git commit -m "test push a file"
+$git push
+
+
+
+$git init
+
+--增加city
+
+--增加remote by url 
+$git remote add origin https://git@github.com/jhone/android-utils.git 
+
+---可能無法使用
+$git remote add origin git@github.com:jhone/android-utils.git
+
+--刪除
+$git remote rm origin
+
+--create a empt file
+$touch help
+
+--edit file 
+git commit -m "my test"
+
+--clone into a new dir
+git clone
+-- add file contents to index
+git add 
+-- list create or delete branches 
+git branch 
+
+git checkout 
+git diff 
+---fetch from and merge with another repository
+git pull
+--update remote refs along with associated obj
+git push 
+--show various types of objects 
+git show 
+--pring lines matching a pattern
+git grep
+--join two or more development histories together
+git merge 
+
+##-
+git svn
