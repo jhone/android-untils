@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>jquery smooth菜单插件</title>
+	
+		<script type="text/javascript"
+			src="http://code.jquery.com/jquery-1.4.4.min.js">
+</script>
+
+
+	
+
+
+<link rel="stylesheet" type="text/css" href="gglossymenu.css"></style>
+
+	</head>
+	<body>
+
+
+
+<div>
+<ul class="glossymenu">
+	<li class="current"><a href="http://www.dynamicdrive.com/"><b>Home</b></a></li>
+	<li><a href="http://www.dynamicdrive.com/style/"><b>CSS</b></a></li>
+	<li><a href="http://www.dynamicdrive.com/forums/"><b>Forums</b></a></li>	
+	<li><a href="http://tools.dynamicdrive.com"><b>Webmaster Tools</b></a></li>	
+	<li><a href="http://www.javascriptkit.com/"><b>JavaScript</b></a></li>	
+	<li><a href="http://www.cssdrive.com"><b>Gallery</b></a></li>	
+</ul>
+</div>
+
+		
+	</body>
+</html>

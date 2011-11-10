@@ -1,0 +1,821 @@
+2011-02-18 16:37:49,156 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:37:49,640 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:37:51,734 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@1abab88: startup date [Fri Feb 18 16:37:51 CST 2011]; root of context hierarchy
+2011-02-18 16:37:52,125 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:37:52,234 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13ad33d: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:37:52,531 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:37:52,750 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:37:52,750 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:37:53,921 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.account
+2011-02-18 16:37:53,921 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main
+2011-02-18 16:37:53,921 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main.config
+2011-02-18 16:37:53,953 [main] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Building new Hibernate SessionFactory
+2011-02-18 16:37:55,187 [main] INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@9b688e] of Hibernate SessionFactory for HibernateTransactionManager
+2011-02-18 16:37:55,328 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@c67a88]; rollback [true]
+2011-02-18 16:37:55,593 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Rolled back transaction after test execution for test context [[TestContext@9be2b5 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@40ece0, testMethod = testFindAll@SystemCompanyManagerTest, testException = [null]]]
+2011-02-18 16:37:55,593 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@c67a88]; rollback [true]
+2011-02-18 16:37:55,609 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Rolled back transaction after test execution for test context [[TestContext@9be2b5 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@1786a3c, testMethod = testSave@SystemCompanyManagerTest, testException = java.lang.NullPointerException]]
+2011-02-18 16:37:55,656 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@1abab88: startup date [Fri Feb 18 16:37:51 CST 2011]; root of context hierarchy
+2011-02-18 16:37:55,656 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13ad33d: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:37:55,687 [Thread-1] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Closing Hibernate SessionFactory
+2011-02-18 16:39:26,484 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:39:26,703 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:39:27,875 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:39:27 CST 2011]; root of context hierarchy
+2011-02-18 16:39:28,140 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:39:28,203 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:39:28,406 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:39:28,562 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:39:28,562 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:39:29,187 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.account
+2011-02-18 16:39:29,187 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main
+2011-02-18 16:39:29,187 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main.config
+2011-02-18 16:39:29,203 [main] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Building new Hibernate SessionFactory
+2011-02-18 16:39:30,031 [main] INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2cbc86] of Hibernate SessionFactory for HibernateTransactionManager
+2011-02-18 16:39:30,125 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@1f9e31e]; rollback [true]
+2011-02-18 16:39:30,281 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Rolled back transaction after test execution for test context [[TestContext@18b1f8f testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@c5122f, testMethod = testSave@SystemCompanyManagerTest, testException = java.lang.NullPointerException]]
+2011-02-18 16:39:30,296 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:39:27 CST 2011]; root of context hierarchy
+2011-02-18 16:39:30,296 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:39:30,312 [Thread-1] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Closing Hibernate SessionFactory
+2011-02-18 16:43:17,453 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:43:17,671 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:43:18,859 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:43:18 CST 2011]; root of context hierarchy
+2011-02-18 16:43:19,125 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:43:19,203 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d6f122: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:43:19,406 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:43:19,562 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:43:19,562 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:43:20,203 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.account
+2011-02-18 16:43:20,203 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main
+2011-02-18 16:43:20,203 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main.config
+2011-02-18 16:43:20,453 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@1f1bd98 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@1d686c1, testMethod = testSave@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:43:20,468 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@1732ed2] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testSave()] for test instance [com.batchcard.service.SystemCompanyManagerTest@1d686c1]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:43:20,484 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:43:18 CST 2011]; root of context hierarchy
+2011-02-18 16:43:20,484 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d6f122: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:44:29,953 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:44:30,140 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:44:31,312 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:44:31 CST 2011]; root of context hierarchy
+2011-02-18 16:44:31,562 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:44:31,640 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:44:31,843 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:44:31,984 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:44:31,984 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:44:32,812 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@19a8416 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@155d3a3, testMethod = testSave@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:44:32,812 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f1bd98] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testSave()] for test instance [com.batchcard.service.SystemCompanyManagerTest@155d3a3]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:44:32,828 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:44:31 CST 2011]; root of context hierarchy
+2011-02-18 16:44:32,828 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:44:58,578 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:44:58,765 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:44:59,937 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:44:59 CST 2011]; root of context hierarchy
+2011-02-18 16:45:00,187 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:45:00,265 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d6f122: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:45:00,453 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:45:00,609 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:45:00,625 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:45:01,437 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@155d3a3 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@1b994de, testMethod = testSave@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:45:01,453 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@1d686c1] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testSave()] for test instance [com.batchcard.service.SystemCompanyManagerTest@1b994de]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:45:01,468 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:44:59 CST 2011]; root of context hierarchy
+2011-02-18 16:45:01,468 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d6f122: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:46:14,046 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:46:14,218 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:46:15,390 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:46:15 CST 2011]; root of context hierarchy
+2011-02-18 16:46:15,640 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:46:15,718 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:46:15,921 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:46:16,078 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:46:16,078 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:46:16,703 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.account
+2011-02-18 16:46:16,703 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main
+2011-02-18 16:46:16,703 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity.main.config
+2011-02-18 16:46:16,718 [main] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Building new Hibernate SessionFactory
+2011-02-18 16:46:17,546 [main] INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2cbc86] of Hibernate SessionFactory for HibernateTransactionManager
+2011-02-18 16:46:17,640 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@1f9e31e]; rollback [true]
+2011-02-18 16:46:17,796 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Rolled back transaction after test execution for test context [[TestContext@c5122f testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@2d0479, testMethod = testSave@SystemCompanyManagerTest, testException = java.lang.NullPointerException]]
+2011-02-18 16:46:17,812 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:46:15 CST 2011]; root of context hierarchy
+2011-02-18 16:46:17,812 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:46:17,828 [Thread-1] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Closing Hibernate SessionFactory
+2011-02-18 16:47:30,546 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:47:30,734 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:47:31,906 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:47:31 CST 2011]; root of context hierarchy
+2011-02-18 16:47:32,156 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:47:32,234 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:47:32,437 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:47:32,578 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:47:32,593 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:47:33,218 [main] WARN  [org.hibernate.cfg.AnnotationBinder] - Package not found or wo package-info.java: com.batchcard.entity
+2011-02-18 16:47:33,234 [main] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Building new Hibernate SessionFactory
+2011-02-18 16:47:34,062 [main] INFO  [org.springframework.orm.hibernate3.HibernateTransactionManager] - Using DataSource [org.apache.commons.dbcp.BasicDataSource@1762027] of Hibernate SessionFactory for HibernateTransactionManager
+2011-02-18 16:47:34,156 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@31688f]; rollback [true]
+2011-02-18 16:47:34,328 [main] INFO  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Rolled back transaction after test execution for test context [[TestContext@180cb01 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@8fbecf, testMethod = testSave@SystemCompanyManagerTest, testException = java.lang.NullPointerException]]
+2011-02-18 16:47:34,328 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:47:31 CST 2011]; root of context hierarchy
+2011-02-18 16:47:34,343 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:47:34,343 [Thread-1] INFO  [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - Closing Hibernate SessionFactory
+2011-02-18 16:48:45,921 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:48:46,109 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:48:47,281 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@1abab88: startup date [Fri Feb 18 16:48:47 CST 2011]; root of context hierarchy
+2011-02-18 16:48:47,546 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:48:47,625 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@102799c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:48:47,812 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:48:47,968 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:48:47,968 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:48:48,796 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@10c6cfc testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@c72243, testMethod = testFindAll@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:48:48,796 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@57e787] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testFindAll()] for test instance [com.batchcard.service.SystemCompanyManagerTest@c72243]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:48:48,890 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@10c6cfc testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@1c486f2, testMethod = testSave@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:48:48,890 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@57e787] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testSave()] for test instance [com.batchcard.service.SystemCompanyManagerTest@1c486f2]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:48:48,906 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@1abab88: startup date [Fri Feb 18 16:48:47 CST 2011]; root of context hierarchy
+2011-02-18 16:48:48,921 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@102799c: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:50:20,703 [main] INFO  [org.springframework.test.context.TestContextManager] - @TestExecutionListeners is not present for class [class com.batchcard.service.SystemCompanyManagerTest]: using defaults.
+2011-02-18 16:50:20,890 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]
+2011-02-18 16:50:22,062 [main] INFO  [org.springframework.context.support.GenericApplicationContext] - Refreshing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:50:22 CST 2011]; root of context hierarchy
+2011-02-18 16:50:22,312 [main] INFO  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/application.properties]
+2011-02-18 16:50:22,390 [main] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy
+2011-02-18 16:50:22,578 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - init configurator ok!
+2011-02-18 16:50:22,734 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys lanaugages list:[Language [description=繁體中文, language=zh_TW], Language [description=ENGLISH, language=en_US], Language [description=简体中文, language=zh_CN]]
+2011-02-18 16:50:22,750 [main] INFO  [com.batchcard.service.main.impl.ConfigLoaderManager] - sys themes list:[Theme [theme=humanity,description=The humanity Theme], Theme [theme=redmond,description=The redmond Theme], Theme [theme=flick,description=The flick Theme], Theme [theme=hot-sneaks,description=The hot-sneaks Theme], Theme [theme=mint-choc,description=The mint-choc Theme], Theme [theme=trontastic,description=The trontastic Theme], Theme [theme=swanky-purse,description=The swanky-purse Theme], Theme [theme=blitzer,description=The blitzer Theme], Theme [theme=eggplant,description=The eggplant Theme], Theme [theme=overcast,description=The overcast Theme], Theme [theme=dark-hive,description=The dark-hive Theme], Theme [theme=vader,description=The vader Theme], Theme [theme=smoothness,description=The smoothness Theme], Theme [theme=excite-bike,description=The excite-bike Theme], Theme [theme=pepper-grinder,description=The pepper-grinder Theme], Theme [theme=black-tie,description=The black-tie Theme], Theme [theme=start,description=The start Theme], Theme [theme=sunny,description=The sunny Theme], Theme [theme=south-street,description=The south-street Theme], Theme [theme=ui-lightness,description=The lightness Theme], Theme [theme=le-frog,description=The le-frog Theme], Theme [theme=dot-luv,description=The dot-luv Theme], Theme [theme=ui-darkness,description=The darkness Theme], Theme [theme=cupertino,description=The cupertino Theme]]
+2011-02-18 16:50:23,562 [main] WARN  [org.springframework.test.context.transaction.TransactionalTestExecutionListener] - Caught exception while retrieving transaction manager with bean name [transactionManager] for test context [[TestContext@19a8416 testClass = SystemCompanyManagerTest, locations = array<String>['classpath*:applicationContext.xml'], testInstance = com.batchcard.service.SystemCompanyManagerTest@155d3a3, testMethod = testSave@SystemCompanyManagerTest, testException = [null]]]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:50:23,578 [main] WARN  [org.springframework.test.context.TestContextManager] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f1bd98] to process 'before' execution of test method [public void com.batchcard.service.SystemCompanyManagerTest.testSave()] for test instance [com.batchcard.service.SystemCompanyManagerTest@155d3a3]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.getTransactionManager(TransactionalTestExecutionListener.java:308)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.beforeTestMethod(TransactionalTestExecutionListener.java:158)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:374)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in URL [file:/D:/Workspaces/MyEclipse%208.6/webside/target/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:190)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 33 more
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.batchcard.entity.main.config.SystemConfiguration
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:272)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:227)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:712)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:636)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:359)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1206)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:717)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1477)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1417)
+	... 40 more
+2011-02-18 16:50:23,593 [Thread-1] INFO  [org.springframework.context.support.GenericApplicationContext] - Closing org.springframework.context.support.GenericApplicationContext@16cd7d5: startup date [Fri Feb 18 16:50:22 CST 2011]; root of context hierarchy
+2011-02-18 16:50:23,593 [Thread-1] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7109c4: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,mainManager,configLoaderManager,accountManager,systemUserDao,systemRoleDao,systemConfigurationDao,systemCompanyDao,systemAuthorityDao,userDao,roleDao,authorityDao,dataAccessObjectFactory,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor]; root of factory hierarchy

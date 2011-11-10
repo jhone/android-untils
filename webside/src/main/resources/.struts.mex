@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="crud-default" location="242,194" size="170,70" />
+  <package name="webmain" location="350,50" size="215,80">
+    <action name="jqsystem-value" location="35,21" size="150,41">
+      <result name="jqsystem-value-json">
+        <resourceEdge source="jqsystem-value-json" routing="0" target="jqsystem-value.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="jqsystem-value.jsp" path="/WEB-INF/jsp/webmain/jqsystem-value.jsp" location="8,43" size="150,55" />
+  <include file="struts-i18n.xml" location="50,200" size="150,30" />
+  <extendsEdge source="webmain" target="crud-default" routing="0" />
+</Struts2Diagram>
+

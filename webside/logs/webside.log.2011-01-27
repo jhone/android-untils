@@ -1,0 +1,8 @@
+2011-01-27 08:58:02,078 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Message template with name mainthemes and type system is not loaded.
+2011-01-27 09:00:14,500 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Message template with name mainlanguages and type system is not loaded.
+2011-01-27 09:01:46,671 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Message template with name mainlanguages and type system is not loaded.
+2011-01-27 09:10:32,390 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Configuaration file not found the root node with name languages- and type system !
+2011-01-27 09:10:32,390 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Configuaration file not exists sub node with name //language !
+2011-01-27 09:11:08,250 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Configuaration file not found the root node with name [languages-] and type [system] !
+2011-01-27 09:11:08,265 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Configuaration file not exists sub node with name [//language] !
+2011-01-27 09:12:39,375 [main] WARN  [com.batchcard.service.main.ConfigLoader] - Configuaration file not exists sub node with name [//language1] !

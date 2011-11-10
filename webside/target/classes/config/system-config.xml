@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+	"http://springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-init-method="init" default-destroy-method="destroy">
+    
+    <!-- 環境設定  be called in actionSupportController-->
+    <bean id="systemConfiguration" class="com.redsun.platf.sys.SystemConfiguration">
+    	
+    	<!-- 開發者模式 -->
+    	<property name="developerMode" value="${system.config.developerMode}"/>
+    	    	
+<!--    	 EP建立Mail Url -->
+<!--    	<property name="epMailGeneratorUrl" value="http://127.0.0.1:9080/walsinep/mailgen/mail.do"/>-->
+    	
+    	<!-- Batch建立Mail Url -->
+    	<property name="batchMailGeneratorUrl" value="http://127.0.0.1:9080/batch/mailgen/mail.do"/>
+    	
+    	<!-- 產生Mail位置 -->
+    	<property name="mailOutputPath" value="c:/walsin/mail"/>
+    	 
+    	<!-- 檔案位置 -->
+    	<property name="attachmentPath" value="c:/walsin/attachments"/>
+    	
+    	<!-- 簽名檔位置 -->
+    	<property name="signaturePath" value="c:/walsin/signatures"/>
+    	
+    	<!-- 範本檔案位置 -->
+    	<property name="tempFilePath" value="c:/walsin/templateFile"/>
+    	
+    	<!-- 報表檔案暫存位置 -->
+    	<property name="reportFilePath" value="c:/walsin/report/temp"/>
+    	
+    	<!-- 報表來源位置 -->
+    	<property name="reportSourcePath" value="c:/walsin/report/source"/>
+    	
+    	<!-- JCO LOG XML位置 -->
+    	<property name="jcoLogXMLPath" value="c:/walsin/jcoLog"/>
+    	
+    	<!-- 簽核引擎逾期通知日數 -->
+    	<property name="overdueDays" value="1"/>
+    	
+    	<!-- 密碼錯誤上限(次數) -->
+    	<property name="pwdErrorTimes" value="5"/>
+    	
+    	<!-- 密碼有效時間(天數) -->
+    	<property name="pwdEffective" value="30"/>
+    	
+    	<!-- 密碼不可重複(次數) -->
+    	<property name="pwdUseTimes" value="2"/>
+    	
+    	<!-- web service帳號,密碼 -->
+    	<property name="wsAccount" value="wsdev"/>
+    	<property name="wsPassword" value="771DD2DA"/>
+    	
+    </bean>
+    
+	
+</beans>

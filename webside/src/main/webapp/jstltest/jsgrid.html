@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+    <html>  
+        <head>  
+            <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>  
+            <title>分页模板</title>  
+            <style type="text/css">  
+                * {  
+                    margin: 0;  
+                    padding: 0;  
+                    font: 12px 宋体;  
+                }  
+                body {  
+                    text-align: center;  
+                }  
+                #option {  
+                    margin: 20px auto;  
+                }  
+                #items{  
+                    width: 4em;  
+                }  
+                #TMPwrap {  
+                    text-align: center;  
+                    margin-top: 10px;  
+                }  
+                #pages {  
+                    margin: 10px auto;  
+                    border-collapse: collapse;  
+                    border: 1px #666 solid;  
+                }  
+                #pages caption {  
+                    width: 100%;  
+                }  
+                #pages th {  
+                    padding: 0.5em;  
+                    border-right: 1px #B9B4A1 solid;  
+                    background: #ECE9D8 url("images/theadbg.gif") repeat-x bottom;  
+                    text-align: center;               
+                }  
+                #pages td {  
+                    border: 1px #B9B4A1 solid;  
+                    border-top: none;  
+                    padding: 0.5em;  
+                }  
+                #navigation {  
+                    margin: 10px;  
+                    text-align: center;  
+                }  
+                #navigation a {  
+                    margin-right: 8px;  
+                    color: black;  
+                }  
+                #navigation a.active {  
+                    text-decoration: none;  
+                    color: red;  
+                    cursor: default;  
+                }  
+                .hidden {  
+                    display: none;  
+                }  
+            </style>          
+        </head>  
+        <body>  
+            <div id="option">  
+                <label for="items">每页显示条数：</label>  
+                <input id="items" type="text" value="4" />  
+                <label for="type">获取方式：</label>  
+                <select id="type">  
+                    <option value="Static">静态</option>  
+                    <option value="AsyncCache">异步缓存</option>  
+                    <option value="Async">异步非缓存</option>  
+                </select>  
+                <input id="display" type="button" value="显 示" />          
+            </div>  
+            <div id="TMPwrap">  
+                <table id="pages">  
+                    <caption>静态分页模板</caption>  
+                    <thead>  
+                    <tr>  
+                        <th>标题一</th>  
+                        <th>标题二</th>  
+                        <th>标题三</th>  
+                        <th>标题四</th>  
+                        <th>标题五</th>  
+                        <th>标题六</th>  
+                    </tr>  
+                    </thead>  
+                    <tbody class="">  
+                        <tr>  
+                            <td>1</td>  
+                            <td>1</td>  
+                            <td>1</td>  
+                            <td>1</td>  
+                            <td>1</td>  
+                            <td>1</td>  
+                        </tr>  
+                        <tr>  
+                            <td>2</td>  
+                            <td>2</td>  
+                            <td>2</td>  
+                            <td>2</td>  
+                            <td>2</td>  
+                            <td>2</td>  
+                        </tr>  
+                        <tr>  
+                            <td>3</td>  
+                            <td>3</td>  
+                            <td>3</td>  
+                            <td>3</td>  
+                            <td>3</td>  
+                            <td>3</td>  
+                        </tr>  
+                        <tr>  
+                            <td>4</td>  
+                            <td>4</td>  
+                            <td>4</td>  
+                            <td>4</td>  
+                            <td>4</td>  
+                            <td>4</td>  
+                        </tr>  
+                    </tbody>  
+                </table>  
+                <div id="navigation">  
+                    <a href="#" class="active">1</a>  
+                    <a href="#">2</a>  
+                    <a href="#" class="">3</a>  
+                </div>  
+            </div>  
+        </body>  
+    </html>  

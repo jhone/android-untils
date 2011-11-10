@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-lazy-init="false">
+
+	<description>所有manager 配置在这里 </description>
+
+<!--	<bean name="abstractManager" class="com.batchcard.service.main.impl.BaseEntityManagerImpl"-->
+<!--		abstract="true" init-method="init">-->
+<!--		<description>super</description>-->
+<!--		<property name="sessionFactory" ref="sessionFactory" />-->
+<!--	</bean>-->
+<!---->
+<!--	<bean name="systemCompanyManager" parent="abstractManager">-->
+<!--		<description>公司别</description>-->
+<!--		<property name="entityClass"-->
+<!--			value="com.batchcard.entity.main.config.SystemCompany" />-->
+<!---->
+<!--	</bean>-->
+<!---->
+<!--	<bean id="systemValueManager" parent="abstractManager" scope="prototype">-->
+<!--		<description>环境</description>-->
+<!--		<property name="entityClass" value="com.batchcard.entity.main.config.SystemValue" />-->
+<!--		<property name="sessionFactory" ref="sessionFactory" />-->
+<!--	</bean>-->
+<!---->
+<!--	<bean name="storageManager" parent="abstractManager">-->
+<!--		<description>库别</description>-->
+<!--		<property name="entityClass" value="com.batchcard.entity.stock.MbStorage" />-->
+<!--	</bean>-->
+<!---->
+<!--	<bean name="systemTxnManagaer" parent="abstractManager">-->
+<!--		<description>menu</description>-->
+<!--		<property name="entityClass" value="com.batchcard.entity.main.SystemTxn" />-->
+<!--	</bean>-->
+	
+	
+<!--	<bean name="jqSystemValue" class="com.batchcard.web.main.JqSystemValueAction"-->
+<!--		scope="prototype">-->
+<!--		<description>jq grid</description>-->
+<!--		<property name="mainManager" ref="systemValueManagaer"></property>-->
+<!--	</bean>-->
+
+</beans>

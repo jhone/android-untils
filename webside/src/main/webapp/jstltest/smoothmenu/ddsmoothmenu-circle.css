@@ -1,0 +1,52 @@
+<style type="text/css">
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.circlemenu{
+width: 100%;
+overflow:hidden;
+}
+
+.circlemenu ul{
+margin: 0;
+padding: 0;
+font: bold 14px Verdana;
+list-style-type: none;
+text-align: center; /* "left", "center", or "right" align menu */
+}
+
+.circlemenu li{
+display: inline;
+margin: 0;
+}
+
+.circlemenu li a{
+display:inline-block;
+text-align:center;
+text-decoration: none;
+color: white;
+background:#b72d23;
+margin: 0;
+margin-right:5px; /*right spacing between each link */
+width:100px;
+height:100px;
+border-radius: 400px; /*really large border radius to create round borders*/
+-moz-border-radius: 400px;
+-webkit-border-radius: 400px;
+}
+
+.circlemenu a span{
+position:relative;
+top:40%;
+}
+
+.circlemenu li a:visited{
+color: white;
+}
+
+.circlemenu a:hover{
+background: #a71b15;
+}
+
+</style>

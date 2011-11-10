@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+	"http://springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-init-method="init" default-destroy-method="destroy">
+	<description>dao 公共配置 </description>
+	
+	
+<!--	<bean id="_basciDao"  class="com.redsun.platf.dao.base.AbstractDao" abstract="true">-->
+<!--	<description>  Dao extend hibernatedao extends simpleHibernamte</description>-->
+<!--		<property name="sessionFactory" ref="sessionFactory" />-->
+<!--	</bean>-->
+ 
+<!--	<bean id="systemLanguageDao"  parent="_basciDao">-->
+<!--		 <property name="entityClass" value="com.redsun.platf.entity.sys.Language"/> -->
+<!--	</bean> -->
+
+	<!-- Common Use entity -->
+<!--	<bean id="systemTxnDao" parent="_transactionProxy">-->
+<!--		<description> menu選單主檔DAO</description>-->
+<!--		<property name="target">-->
+<!--			<bean class="com.walsin.platf.dao.sys.impl.SystemTxnDaoImpl"-->
+<!--				parent="_basciDao">-->
+<!--				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.SystemTxn" />-->
+<!--			</bean>-->
+<!--		</property>-->
+<!--	</bean>-->
+
+<!--	<bean id="systemUserDao" parent="_transactionProxy">-->
+<!--		<description>User主檔DAO</description>-->
+<!--		<property name="target">-->
+<!--			<bean class="com.walsin.platf.dao.sys.impl.SystemUserDaoImpl"-->
+<!--				parent="_basciDao">-->
+<!--				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.SystemUser" />-->
+<!--			</bean>-->
+<!--		</property>-->
+<!--	</bean>-->
+
+
+<!--	<bean id="userPwdLogDao" parent="_transactionProxy">-->
+<!--		<description>密碼歷史紀錄DAO </description>-->
+<!--		<property name="target">-->
+<!--			<bean class="com.walsin.platf.dao.sys.impl.UserPwdLogDaoImpl"-->
+<!--				parent="_basciDao">-->
+<!--				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.UserPwdLog" />-->
+<!--			</bean>-->
+<!--		</property>-->
+<!--	</bean>-->
+
+<!--	<bean id="attachmentDao" parent="_transactionProxy">-->
+<!--		<description>附件檔案DAO</description>-->
+<!--		<property name="target">-->
+<!--			<bean class="com.walsin.platf.dao.sys.impl.AttachmentDaoImpl"-->
+<!--				parent="_basciDao">-->
+<!--				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Attachment" />-->
+<!--			</bean>-->
+<!--		</property>-->
+<!--	</bean>-->
+<!-- 
+	<bean id="batchJobDao" parent="_transactionProxy">
+		<description>排程主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.BatchJobDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.BatchJob" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="batchJobDetailDao" parent="_transactionProxy">
+		<description>排程主檔執行紀錄DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.BatchJobDetailDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.BatchJobDetail" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="privgrpDao" parent="_transactionProxy">
+		<description>權限包DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.PrivgrpDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Privgrp" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="privgrpMapDao" parent="_transactionProxy">
+		<description>權限包與交易對應DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.PrivgrpMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.PrivgrpMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="hrEmployeeDao" parent="_transactionProxy">
+		<description>HR員工主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.HREmployeeDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.HREmployee" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="employeeDao" parent="_transactionProxy">
+		<description>系統員工主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.EmployeeDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Employee" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="companyDao" parent="_transactionProxy">
+		<description>公司主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.CompanyDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Company" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="roleDao" parent="_transactionProxy">
+		<description>角色主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.RoleDaoImpl" parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Role" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="roleMapDao" parent="_transactionProxy">
+		<description>角色與權限包對應主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.RoleMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.RoleMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="departmentDao" parent="_transactionProxy">
+		<description>部門主檔DAO </description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.DepartmentDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Department" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="accessLogDao" parent="_transactionProxy">
+		<description>使用者登入紀錄主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.AccessLogImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.AccessLog" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="mailDao" parent="_transactionProxy">
+		<description>信件紀錄主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.EpMailDaoDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.EpMail" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="userCompanyMapDao" parent="_transactionProxy">
+		<description>員工與公司對應主檔DAO </description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.UserCompanyMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.UserCompanyMap" />
+			</bean>
+		</property>
+	</bean> -->
+
+	<!-- 
+	<bean id="userRoleMapDao" parent="_transactionProxy">
+		<description>員工與公司與角色對應主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.UserRoleMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.UserRoleMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="userPlantMapDao" parent="_transactionProxy">
+		<description>員工與廠對應主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.UserPlantMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.UserPlantMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="bulletinDao" parent="_transactionProxy">
+		<description>公佈欄主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.BulletinDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.Bulletin" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="bulletinMapDao" parent="_transactionProxy">
+		<description>公佈欄與廠別關聯主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.BulletinMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.BulletinMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="txnLogDao" parent="_transactionProxy">
+		<description>使用者交易紀錄主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.TxnLogDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.TxnLog" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="deptPlantMapDao" parent="_transactionProxy">
+		<description>部門與工廠對應主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.cmn.impl.DeptPlantMapDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.cmn.DeptPlantMap" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="exceptionLogDao" parent="_transactionProxy">
+		<description>部門與工廠對應主檔DAO</description>
+		<property name="target">
+			<bean class=" com.walsin.platf.dao.sys.impl.ExceptionLogDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.ExceptionLog" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="jobSyncDao" parent="_transactionProxy">
+		<description>排程執行時間紀錄DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.JobSyncDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.JobSync" />
+			</bean>
+		</property>
+	</bean>
+-->
+	<!-- 
+	<bean id="costCenterDao" parent="_transactionProxy">
+		<description>成本中心主檔DAO</description>
+		<property name="target">
+			<bean class=" com.walsin.platf.dao.cmn.impl.CostCenterDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.cmn.CostCenter" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="configKeyDao" parent="_transactionProxy">
+		<description> 公司廠別參數設定主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.ConfigKeyDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.sys.ConfigKey" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="configPlantDao" parent="_transactionProxy">
+		<description>工廠別參數設定檔DAO </description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.ConfigPlantDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.ConfigPlant" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<bean id="jcoXmlLogDao" parent="_transactionProxy">
+		<description>JCO上下傳紀錄LOG檔(XML)DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.jco.impl.JcoXmlLogDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass" value="com.walsin.platf.orm.entity.jco.JcoXmlLog" />
+			</bean>
+		</property>
+	</bean>
+
+
+	<bean id="myPrefHeaderDao" parent="_transactionProxy">
+		<description>員工偏好主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.pref.impl.MyPrefHeaderDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.pref.MyPrefHeader" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="configCompanyDao" parent="_transactionProxy">
+		<description>公司別設定檔主檔DAO</description>
+		<property name="target">
+			<bean class="com.walsin.platf.dao.sys.impl.ConfigCompanyDaoImpl"
+				parent="_basciDao">
+				<property name="entityClass"
+					value="com.walsin.platf.orm.entity.sys.ConfigCompany" />
+			</bean>
+		</property>
+	</bean>
+-->
+	<!-- EP System use -->
+
+	<!-- DAO集合 annontation autowire -->
+	<!-- <bean id="dataAccessObjectFactory" class="com.walsin.platf.dao.DataAccessObjectFactory"> -->
+	<!-- <property name="mailDao" ref="mailDao"/> -->
+	<!-- <property name="systemTxnDao" ref="systemTxnDao"/> -->
+	<!-- <property name="systemUserDao" ref="systemUserDao"/> -->
+	<!-- <property name="userPwdLogDao" ref="userPwdLogDao"/> -->
+	<!-- <property name="batchJobDao" ref="batchJobDao"/> -->
+	<!-- <property name="attachmentDao" ref="attachmentDao"/> -->
+	<!-- <property name="batchJobDetailDao" ref="batchJobDetailDao"/> -->
+	<!-- <property name="privgrpDao" ref="privgrpDao"/> -->
+	<!-- <property name="privgrpMapDao" ref="privgrpMapDao"/> -->
+	<!-- <property name="hrEmployeeDao" ref="hrEmployeeDao"/> -->
+	<!-- <property name="employeeDao" ref="employeeDao"/> -->
+	<!-- <property name="companyDao" ref="companyDao"/> -->
+	<!-- <property name="roleDao" ref="roleDao"/> -->
+	<!-- <property name="roleMapDao" ref="roleMapDao"/> -->
+	<!-- <property name="departmentDao" ref="departmentDao"/> -->
+	<!-- <property name="accessLogDao" ref="accessLogDao"/> -->
+	<!-- <property name="plantDao" ref="plantDao"/> -->
+	<!-- <property name="userCompanyMapDao" ref="userCompanyMapDao"/> -->
+	<!-- <property name="userRoleMapDao" ref="userRoleMapDao"/> -->
+	<!-- <property name="userPlantMapDao" ref="userPlantMapDao"/> -->
+	<!-- <property name="myPrefHeaderDao" ref="myPrefHeaderDao"/> -->
+	<!-- <property name="txnLogDao" ref="txnLogDao"/> -->
+	<!-- <property name="deptPlantMapDao" ref="deptPlantMapDao"/> -->
+	<!-- <property name="exceptionLogDao" ref="exceptionLogDao"/> -->
+	<!-- <property name="jobSyncDao" ref="jobSyncDao"/> -->
+	<!-- <property name="intCompanyDao" ref="intCompanyDao"/> -->
+	<!-- <property name="intEmployeeDao" ref="intEmployeeDao"/> -->
+	<!-- <property name="intDeptDao" ref="intDeptDao"/> -->
+	<!-- <property name="intPlantDao" ref="intPlantDao"/> -->
+	<!-- <property name="intPlantRelatedDao" ref="intPlantRelatedDao"/> -->
+	<!-- <property name="costCenterDao" ref="costCenterDao"/> -->
+	<!-- <property name="intCostCenterDao" ref="intCostCenterDao"/> -->
+	<!-- <property name="configCompanyDao" ref="configCompanyDao"/> -->
+	<!-- <property name="configKeyDao" ref="configKeyDao"/> -->
+	<!-- <property name="configPlantDao" ref="configPlantDao"/> -->
+	<!-- </bean> -->
+</beans>

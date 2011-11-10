@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.convention.default.parent.package"
+		value="crud-default" />
+	<constant name="struts.convention.package.locators" value="web" />
+	
+	<constant name="struts.convention.package.locators.basePackage"
+		value="com.batchcard.web" />
+
+	<!-- 用于CRUD Action的parent package -->
+	<package name="crud-default" extends="convention-default">
+		<!--
+			基于paramsPrepareParamsStack, 增加store
+			interceptor保证actionMessage在redirect后不会丢失
+		-->
+		<interceptors>
+			<interceptor-stack name="crudStack">
+				<interceptor-ref name="store">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="crudStack" />
+	</package>
+
+	<!--
+		使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定.
+	-->
+
+	<!--pyc:: Some or all of these can be flipped to true for debugging -->
+	<constant name="struts.devMode" value="true" />
+
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<constant name="struts.action.extension" value="action,do,," />
+
+	<!-- pyc::defalut path :默认所有的结果页面都存储在WEB-INF/content下 -->
+	<constant name="struts.convention.result.path" value="/WEB-INF/jsp" />
+
+	<!-- Struts2 模板主题 -->
+	<constant name="struts.ui.theme" value="css_xhtml" />
+
+	<!-- Struts2 Codebehind插件 简化Action配置 -->
+	<!--
+		<constant name="struts.codebehind.pathPrefix" value="/WEB-INF/jsp/" />
+	-->
+
+	<!-- 上传文件限制 -->
+	<constant name="struts.multipart.maxSize" value="209715200" />
+
+
+	<!--	i18n-->
+	<include file="i18n/struts-i18n.xml" />
+
+	<package name="webmain" extends="struts-default,json-default,crud-default"
+		namespace="/">
+<!--		<action name="jqsystem-value"-->
+<!--			class="jqSystemValue">-->
+<!--			<result name="success">-->
+<!--				/WEB-INF/jsp/webmain/jqsystem-value.jsp-->
+<!--			</result>-->
+<!--		</action>-->
+<!--		<action name="jqsystem-value-json"-->
+<!--			class="jqSystemValue" method="whoelist">-->
+<!--			-->
+<!--			<result name="success" type="json"/>-->
+<!--		</action>-->
+		
+		
+		</package>
+
+	<constant name="struts.objectFactory" value="spring" />
+
+</struts>

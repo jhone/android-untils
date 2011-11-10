@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>jquery smooth菜单插件</title>
+		<link rel="stylesheet" type="text/css" href="aerobuttonmenu.css" />
+		<script type="text/javascript"
+			src="http://code.jquery.com/jquery-1.4.4.min.js">
+</script>
+
+
+	
+
+
+	</head>
+	<body>
+		<div class="aerobuttonmenu">
+<ul>
+<li><a href="http://www.dynamicdrive.com">Home</a></li>
+<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li>
+<li><a href="http://www.dynamicdrive.com/style/">CSS</a></li>
+<li><a href="http://www.dynamicdrive.com/forums/">Forums</a></li>
+<li><a href="http://tools.dynamicdrive.com/imageoptimizer/">Gif Optimizer</a></li>
+</ul>
+</div>
+
+<br />
+
+<div class="aerobuttonmenu">
+
+<div class="rightsection">
+<a href="#"><img src="http://i31.tinypic.com/33mpnon.png" border="0" alt="search" /></a>
+</div>
+
+<a href="http://www.dynamicdrive.com" class="aero"><span>Home</span></a> 
+<a href="http://www.dynamicdrive.com/style/" class="aero"><span>CSS Examples</span></a> 
+<a href="http://www.dynamicdrive.com/forums/" class="aero"><span>Forums</span></a> 
+<a href="http://tools.dynamicdrive.com" class="aero"><span>Webmaster Tools</span></a> 
+<a href="http://www.javascriptkit.com" class="aero"><span>JavaScript</span></a> 
+<a href="http://www.cssdrive.com" class="aero"><span>Gallery</span></a>
+</div>
+
+<br />
+
+<div class="aerobuttonmenu black">
+
+<div class="rightsection">
+<a href="#"><img src="http://i31.tinypic.com/33mpnon.png" border="0" alt="search" /></a>
+</div>
+
+<a href="http://www.dynamicdrive.com" class="aero"><span>Home</span></a> 
+<a href="http://www.dynamicdrive.com/style/" class="aero"><span>CSS Examples</span></a> 
+<a href="http://www.dynamicdrive.com/forums/" class="aero"><span>Forums</span></a> 
+<a href="http://tools.dynamicdrive.com" class="aero"><span>Webmaster Tools</span></a> 
+<a href="http://www.javascriptkit.com" class="aero"><span>JavaScript</span></a> 
+<a href="http://www.cssdrive.com" class="aero"><span>Gallery</span></a>
+</div>
+
+		
+	</body>
+</html>

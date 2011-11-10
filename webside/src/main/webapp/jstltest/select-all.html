@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.  Transitional//EN">
+<html>
+  <head>
+    <title>select-all.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=BIG5">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+	        <script type="text/javascript">
+	            function selectAll(checkbox) {
+	                $('input[type=checkbox]').attr('checked', $(checkbox).attr('checked'));
+	            }
+	        </script>
+  </head>
+  
+  <body>
+    This is my HTML page. <br>
+
+ 	        <input type="checkbox" onclick="selectAll(this);" />select all<br/>
+ 	        <input type="checkbox"  /><br/>
+ 	        <input type="checkbox"  /><br/>
+ 	        <input type="checkbox"  /><br/>
+ 	        <input type="checkbox"  /><br/>
+ 	        <input type="checkbox"  /><br/>
+ 	        <input type="checkbox"  /><br/>
+
+    
+    
+  </body>
+</html>

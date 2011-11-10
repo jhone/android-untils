@@ -1,0 +1,106 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>仿美橙互联导航菜单</title>
+	<style>
+	body {
+	    margin-left: 0px;
+	    margin-top: 0px;
+	    margin-right: 0px;
+	    margin-bottom: 0px;
+	}
+	a:link {
+	    text-decoration: none;
+	}
+	a:visited {
+	    text-decoration: none;
+	}
+	a:hover {
+	    text-decoration: none;
+	}
+	a:active {
+	    text-decoration: none;
+	}
+	#nav_wrap{margin:20px auto;}
+	#nav li{ text-align:center;font-size:12px;}
+	 
+	#nav_wrap { width:px; overflow:hidden; }
+	#nav{ background:url(/jscss/demoimg//nav_bg.gif) repeat-x; height:39px; position:relative; width:px; margin:0 auto; }
+	#nav .l{ background:url(/jscss/demoimg//navnbg.gif) no-repeat 0px 0px; height:39px; width:2px; float:left}
+	#nav .r{ background:url(/jscss/demoimg//navnbg.gif) no-repeat -4px 0px; height:39px; width:2px; float:right}
+	#nav .bt_qnav { float:right; } 
+	#nav .bt_qnav a{ width:31px; height:29px; line-height:39px;display:block;padding:9px 2px 0 0;}
+	#nav .c{ float:left;margin:0;padding:0}
+	#nav li { float:left; list-style:none; }
+	#nav li .v a{ width:83px;height:39px; line-height:33px; display:block; color:#FFF; background:url(/jscss/demoimg//navnbg.gif) no-repeat -87px 6px; float:left; font-family:"Microsoft Yahei";}
+	#nav li .v a:hover,#nav li .v .sele{background:url(/jscss/demoimg//navnbg.gif) no-repeat 0px -47px; color:#; line-height:42px; font-size:14px}
+	#nav .kind_menu { height:30px;*height:29px; line-height:30px;vertical-align:middle; position:absolute; top:37px;*top:39px; left:70px; width:px; text-align:left; display:none; background:url(/jscss/demoimg//nav_bg1.gif) repeat-x bottom; color:#; }
+	#nav .kind_menu a {color:#; float:left; text-align:center; width:90px; font-family:Arial, Helvetica, sans-serif;}
+	#nav .kind_menu a:hover { color:#ff0; background:url(/jscss/demoimg//navnbg.gif) no-repeat 1px -91px;*background:url(/jscss/demoimg//navnbg.gif) no-repeat 1px -93px;}
+	#nav .kind_menu span { font-size:10px;  color:#cecece; line-height:30px; *line-height:26px; float:left }
+	#tmenu{ background:url(/jscss/demoimg//nav_bg1.gif) repeat-x bottom; height:28px; border-bottom:1px solid #eee;  }
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+	</head>
+	<body style="text-align:center">
+	 
+	<DIV id=nav_wrap>
+	<DIV id=nav>
+	<DIV class=l></DIV>
+	<UL class=c>
+	  <LI><SPAN class=v><A href="#" target="_blank">首页</A></SPAN>
+	  <DIV class=kind_menu style="LEFT: 20px">欢迎访问美橙互联! </DIV></LI>
+	  <LI><SPAN class=v><A href="#">特惠套餐</A></SPAN>
+	  <DIV class=kind_menu style="LEFT: 40px"><A
+	  href="#">电信套餐</A> <SPAN>|</SPAN> <A
+	  href="#">双线套餐</A> </DIV></LI>
+	  <LI><SPAN class=v><A href="#">域名频道</A></SPAN>
+	  <DIV class=kind_menu><A href="#">英文域名</A>
+	  <SPAN>|</SPAN> <A href="#">中文域名</A>
+	  <SPAN>|</SPAN> <A href="#">通用网址</A> <SPAN>|</SPAN>
+	  <A href="#">价格列表</A>
+	  <SPAN>|</SPAN> <A href="#" target=_blank>域名交易</A>
+	  <SPAN>|</SPAN> <A href="#">相关帮助</A>
+	  <SPAN>|</SPAN> <A href="#">智能加速</A> </DIV></LI>
+	  </UL>
+	<DIV class=r></DIV>
+	</DIV><!--nav-->
+	<DIV id=tmenu></DIV>
+	</DIV><!--nav_wrap-->
+	<SCRIPT type=text/javascript>
+	    var site_url = window.location.href.toLowerCase(); 
+	    switch (true) {    
+	        default :
+	            $("#nav li").attr("class","");
+	            $("#nav li").eq(0).attr("class","nav_lishw");
+	            $(".nav_lishw .v a").attr("class","sele");
+	            $(".nav_lishw .kind_menu").show();
+	    }
+	    $("#nav li").hover(
+	        function(){
+	            clearTimeout(setTimeout("0")-1);
+	            $("#nav .kind_menu").hide();
+	            $("#nav li .v .sele").attr("class","shutAhover");
+	            $(this).attr("id","nav_hover")
+	            $("#nav_hover .v a").attr("class","sele");
+	            $("#nav_hover .kind_menu").show();
+	        },
+	        function(){
+	             
+	            if($(this).attr("class") != "nav_lishw"){
+	                $("#nav_hover .v .sele").attr("class","");
+	                $("#nav_hover .kind_menu").hide();
+	            }
+	            $(this).attr("id","")
+	            $("#nav li .v .shutAhover").attr("class","sele");
+	            setTimeout(function(){
+	                $(".nav_lishw .kind_menu").show();
+	                $(".nav_lishw .v a").attr("class","sele");
+	            },50);
+	        }
+	    );
+	     
+	</SCRIPT>
+	</body>
+</html>

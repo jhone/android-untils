@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<themes name="themes" type="system">
+		<theme name="cupertino" description="The cupertino Theme" />
+		<theme name="ui-darkness" description="The darkness Theme" />
+		<theme name="ui-lightness" description="The lightness Theme" />
+		<theme name="redmond" description="The redmond Theme" />
+		<theme name="smoothness" description="The smoothness Theme" />
+		<theme name="black-tie" description="The black-tie Theme" />
+		<theme name="blitzer" description="The blitzer Theme" />
+		<theme name="dark-hive" description="The dark-hive Theme" />
+		<theme name="dot-luv" description="The dot-luv Theme" />
+		<theme name="eggplant" description="The eggplant Theme" />
+		<theme name="excite-bike" description="The excite-bike Theme" />
+		<theme name="flick" description="The flick Theme" />
+		<theme name="hot-sneaks" description="The hot-sneaks Theme" />
+		<theme name="humanity" description="The humanity Theme" />
+		<theme name="le-frog" description="The le-frog Theme" />
+		<theme name="mint-choc" description="The mint-choc Theme" />
+		<theme name="overcast" description="The overcast Theme" />
+		<theme name="pepper-grinder" description="The pepper-grinder Theme" />
+		<theme name="south-street" description="The south-street Theme" />
+		<theme name="start" description="The start Theme" />
+		<theme name="sunny" description="The sunny Theme" />
+		<theme name="swanky-purse" description="The swanky-purse Theme" />
+		<theme name="trontastic" description="The trontastic Theme" />
+		<theme name="vader" description="The vader Theme" />
+	</themes>
+
+	<languages name="languages" type="system">
+		<language name="en_US" description="ENGLISH" />
+		<language name="zh_CN" description="简体中文" />
+		<language name="zh_TW" description="繁體中文" />
+	</languages>
+
+	<email name="activation" type="html">
+		<reply-to></reply-to>
+		<subject>Activation Code for Application System at Tsinghua University
+		</subject>
+		<body><![CDATA[
+                <html>
+                <body>
+                <p style="color:#333333;font-size:10pt;text-indent:0em">用户你好，</p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">欢迎你注册！</p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">你的激活码为：<span style="color:red; font-weight:bold">%ACTIVATIONCODE%</span>，请登录申请系统后激活用户。</p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">或者<a href="http://www.studyattsinghua.info/snaims/userAccess.do?method=activate&username=%USERNAME%&code=%ACTIVATIONCODE%">点击此处</a>激活。
+                <p style="color:#333333;font-size:10pt;text-indent:2em">感谢你的参与。</p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">顺颂近祺！<p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">此致，</p>
+
+                <p style="color:#333333;font-size:10pt;text-indent:0em">-- </p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em">工作办公室</p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em"><a href="http://www.studyattsinghua.info/snaims">外国留学生网上申请系统</a></p>
+                <p style="color:#333333;font-size:10pt;text-indent:2em"><a href="emailto:snaims.tsinghua@gmail.com">BUG REPORT :</a> <em>snaims.tsinghua@gmail.com</em> </p>
+                <p style="color:#666666;font-size:8pt;">----注：此信件为系统自动发出，请勿直接回复。----</p>
+                <p>&nbsp;</p>
+
+                   ]]>
+		</body>
+	</email>
+
+</configuration>

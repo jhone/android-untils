@@ -1,0 +1,107 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ page
+	import="org.springside.modules.security.springsecurity.SpringSecurityUtils"%>
+<%@ include file="/common/taglibs.jsp"%>
+<div id="hd">
+	<div id="title">
+		<h1>Web-side</h1>
+		<h2>--CRUD管理界面</h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="${ctx}/account/user.action">帐号列表</a></li>
+			<li><a href="${ctx}/account/role.action">角色列表</a></li>
+			<li><a href="${ctx}/j_spring_security_logout">退出登录</a></li>
+		</ul>
+	</div>
+</div>
+<%
+	//String getParam=request.getParameter("request_locale");
+	if (session.getAttribute("$_CONFIG") != null) {
+		String getParam = session.getAttribute("$_CONFIG")
+				.toString();
+		if ((getParam.equals("zh_CN")) && (getParam != null)) {
+			session.setAttribute("language", "zh_CN");
+		} else if ((getParam.equals("zh_TW")) && (getParam != null)) {
+			session.setAttribute("language", "zh_TW");
+		} else if ((getParam.equals("en_US")) && (getParam != null)) {
+			session.setAttribute("language", "en_US");
+		}
+	}else{
+		session.setAttribute("language", "zh_CN");//默认为中文简体
+		session.setAttribute("request_locale", "zh_CN");//默认为中文简体
+	}
+%>
+<script>
+function checkSession() 
+	    {   //如果SessionValue 是''代表Session沒有值 
+	     var SessionValue = <%=session.getAttribute("AAA") %> 
+	        if(SessionValue == '') 
+	        { 
+	            document.getElementById('myDiv').style.display='none'; 
+	        } 
+	    } 
+</script>
+<body onload="checkSession()"> 
+
+<div id="head">
+	<span class="fl" id="logo"> <a
+		href="<s:url action="index" namespace="/" includeParams="none"/>">
+		<img src="${ctx}/images/logo.gif" width="93" height="39"
+				alt="${app..companyName}" title="${sessionScope.application.companyName}" />
+	</a>
+	</span>
+	<span id="language" class="fl font10"><font class="huangse">→
+			<a href="http://www.walsin.com" target="_blank">WALSIN LIHWA</a>
+	</font> <font class="baise  padding20"> <a
+			href="<s:url includeParams="get" encode="true"><s:param name="request_locale">zh_CN</s:param></s:url>">中文简体</a>
+			| <a
+			href="<s:url includeParams="get" encode="true"><s:param name="request_locale">zh_TW</s:param></s:url>">中文繁体</a>
+			| <a
+			href="<s:url includeParams="get" encode="true"><s:param name="request_locale">en_US</s:param></s:url>">English</a>
+	</font>
+	</span>
+	<span id="menu" class="fl font14 jiacu">
+		<ul>
+			<li class="have ${t_index}">
+				<a href="<s:url action="index" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.index')}" />
+				</a>
+			</li>
+			<li class="have ${t_intro}">
+				<a
+					href="<s:url action="companyAbout" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.about')}" />
+				</a>
+			</li>
+			<li class="have ${t_news}">
+				<a href="<s:url action="news" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.info')}" />
+				</a>
+			</li>
+			<li class="have ${t_product}">
+				<a
+					href="<s:url action="product" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.product')}" />
+				</a>
+			</li>
+			<li class="have ${t_process}">
+				<a
+					href="<s:url action="process" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.process')}" />
+				</a>
+			</li>
+			<li class="have ${t_zbtx}">
+				<a
+					href="<s:url action="quality" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.zl')}" />
+				</a>
+			</li>
+			<li class="none ${t_contact}">
+				<a
+					href="<s:url action="contact" namespace="/" includeParams="none"/>"><s:property
+						value="%{getText('title.contact')}" />
+				</a>
+			</li>
+		</ul> </span>
+</div>
